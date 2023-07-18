@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html, body { height: 100%;margin: 0;font-family: 'Pacifico', cursive; }
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+h1 {
+    color: white;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 285px;
+
+}
+
+@media (max-width:1920px) and (min-width: 1024px) {
+    .burger {
+        justify-content: flex-start;
+        max-width: 15%;
+
+    }
+}
+@media (max-width:1023.9px) and (min-width: 640px) {
+    .burger {
+        justify-content: flex-start;
+        max-width: 36%;
+
+    }
+}
+@media (max-width:639.9px) {
+    .burger {
+        justify-content: flex-start;
+        max-width: 50%;
+
+    }
+}
+
+
+img {
+    width: 100%;
+    max-width: 285px;
+    position: relative;
+ 
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+.bread{
+    animation-name: bread_movement;
+    z-index: 7;
+}
+.pickles{
+    animation-name: pickles_movement;
+    z-index: 6;
+}
+.luttce{
+    animation-name: luttce_movement;
+    z-index: 5;
+}
+.tomato {
+    /* animation-name: movement1; */
+    z-index: 4;
+}
+.cheese {
+    animation-name: cheese_movement;
+    z-index: 3;
+}
+.beef {
+    animation-name: beef_movement;
+    z-index: 2;
+}
+.base_bread {
+    animation-name: base_bread_movement;
+    z-index: 1;
+}
+ @keyframes bread_movement {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:34%;}
+  }
+  @keyframes pickles_movement {
+    0%   {left:0px; top:0px;}
+
+    100% {left:0px; top:24%;}
+  }
+  @keyframes luttce_movement {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:13%;}
+  }
+  @keyframes cheese_movement {
+    0%   {left:0px; bottom:0px;}
+    100% {left:0px; bottom:13%;}
+  }
+  @keyframes beef_movement {
+    0%   {left:0px; bottom:0px;}
+    100% {left:0px; bottom:24%;}
+  }
+  @keyframes base_bread_movement {
+    0%   {left:0px; bottom:0px;}
+    100% {left:0px; bottom:34%;}
+  }
